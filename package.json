@@ -37,5 +37,8 @@
   },
   "keywords": [
     "gruntplugin"
-  ]
+  ],
+  "dependencies": {
+    "deep-equal": "^1.0.0"
+  }
 }

@@ -93,3 +93,7 @@ Follow the jshintrc settings for the code style. Add unit tests for any new or c
 
 ## Release History
 _(Nothing yet)_
+
+## To DO
+
+* add minification of generated HTML (at least remove all spaces)
