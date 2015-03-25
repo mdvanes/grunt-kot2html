@@ -1,8 +1,8 @@
-<script type="text/html" id="/theme/test/fixturesTemplateA">
+<script type="text/html" id="/theme/test/fixtures/TemplateA">
     <span class="a" data-bind="text: foo"></span>
 </script>
 
-<script type="text/html" id="/theme/test/fixturesTemplateB">
+<script type="text/html" id="/theme/test/fixtures/TemplateB">
     <span class="b" data-bind="text: bar"></span>
 </script>
 

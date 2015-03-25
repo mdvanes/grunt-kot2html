@@ -97,4 +97,7 @@ Follow the jshintrc settings for the code style. Add unit tests for any new or c
 
 ## To Do
 
+* When committing got: warning: LF will be replaced by CRLF in test/expected/dev. This means that the unit test will fail.
+* Add lintspaces
 * add minification of generated HTML (at least remove all spaces)
+* add template to unit test with same path as generated HTML
