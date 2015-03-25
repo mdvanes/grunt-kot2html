@@ -34,7 +34,7 @@ grunt.initConfig({
         dist: {
             prefix: '/theme/',
             src: 'templates/**/*.html',
-            dest: 'templates/custom-templates.html'
+            dest: 'custom-templates.html'
         }
     }
 });
@@ -74,7 +74,7 @@ Not an option, but directly in the task. Output path. Location of the combined H
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+In this example, the sources are files with the .html extension in the `templates` dir and the generated file is `custom-templates.html` in the root dir.
 
 ```js
 grunt.initConfig({
@@ -82,7 +82,7 @@ grunt.initConfig({
         dist: {
             prefix: '/theme/',
             src: 'templates/**/*.html',
-            dest: 'templates/custom-templates.html'
+            dest: 'custom-templates.html'
         }
     }
 });
@@ -92,8 +92,9 @@ grunt.initConfig({
 Follow the jshintrc settings for the code style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
 
-## To DO
+* 2015-03-25    v0.1.0     initial release
+
+## To Do
 
 * add minification of generated HTML (at least remove all spaces)
