@@ -11,8 +11,7 @@
 module.exports = function (grunt) {
 
     grunt.registerMultiTask('kot2html', 'Grunt task to combine Knockout templates into one HTML for the Knockout.js-External-Template-Engine.', function () {
-        //var defaultTemplatesContent = grunt.file.read(defaultTemplates);
-        //result += defaultTemplatesContent + '\n\n';
+
         var path = require('path'),
             files = grunt.file.expand(this.data.src),
             destObj = path.parse(this.data.dest),
@@ -22,14 +21,9 @@ module.exports = function (grunt) {
 
         files.forEach(function (file) {
             grunt.verbose.writeln('Processing', file);
+
             // Prevent reading the output file
-            //if (path.basename(file) !== 'custom-templates.html') {
             if (!deepEqual(destObj, path.parse(file))) {
-                //strip the extension to determine a template name
-                //var dirname = this.data.prefix + path.dirname(file);
-                //var name = path.basename(file).replace('.html', '');
-                //console.log('path', path, path.dirname(file));
-                //name = dirname + '/' + name;
 
                 // Strip the extension to determine the template name
                 var templateId = prefix +
