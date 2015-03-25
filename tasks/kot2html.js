@@ -33,7 +33,7 @@ module.exports = function (grunt) {
 
                 // Strip the extension to determine the template name
                 var templateId = prefix +
-                    path.dirname(file) +
+                    path.dirname(file) + '/' +
                     path.basename(file).replace('.html', '');
                 var content = grunt.file.read(file);
 
