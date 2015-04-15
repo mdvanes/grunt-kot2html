@@ -51,25 +51,22 @@ Example output:
 </script>
 ```
 
-### Options
+### Properties
 
 #### prefix
 Type: `String`
-Default value: `',  '`
 
-Not an option, but directly in the task. Prefix that is prepended to the template id along with the path. E.g. if the prefix is `/theme/` and the path of a template is `templates/bar.html`, the templateId will be `/theme/template/bar` (without .html).
+Prefix that is prepended to the template id along with the path. E.g. if the prefix is `/theme/` and the path of a template is `templates/bar.html`, the templateId will be `/theme/template/bar` (without .html).
 
 #### src
 Type: `String`
-Default value: `',  '`
 
-Not an option, but directly in the task. Input path. Location of the HTML Knockout Templates. Expects template files to have the .html extension
+Input path. Location of the HTML Knockout Templates. Expects template files to have the .html extension
 
 #### dest
 Type: `String`
-Default value: `',  '`
 
-Not an option, but directly in the task. Output path. Location of the combined HTML file.
+Output path. Location of the combined HTML file.
 
 ### Usage Examples
 
