@@ -1,3 +1,5 @@
+![Build Status](https://travis-ci.org/mdvanes/grunt-kot2html.svg?branch=master) [![npm version](https://badge.fury.io/js/grunt-kot2html.svg)](https://badge.fury.io/js/grunt-kot2html)
+
 # grunt-kot2html
 
 > Grunt task to combine Knockout templates into one HTML for the Knockout.js-External-Template-Engine.
