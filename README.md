@@ -60,6 +60,11 @@ Type: `String`
 
 Prefix that is prepended to the template id along with the path. E.g. if the prefix is `/theme/` and the path of a template is `templates/bar.html`, the templateId will be `/theme/template/bar` (without .html).
 
+#### srcRoot
+Type: `String`
+
+Root of the input path. This part is not included in the template ID, in contrast to the `src` property.
+
 #### src
 Type: `String`
 
@@ -93,6 +98,7 @@ Follow the jshintrc settings for the code style. Add unit tests for any new or c
 ## Release History
 
 * 2015-03-25    v0.1.0     initial release
+* 2016-02-25    v0.3.0     added srcRoot property
 
 ## To Do
 
