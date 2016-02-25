@@ -34,6 +34,12 @@ module.exports = function (grunt) {
                 prefix: '/theme/',
                 src: 'test/fixtures/**/*.html',
                 dest: 'tmp/all-templates.html'
+            },
+            distWithSrcRoot: {
+                prefix: '/theme/',
+                srcRoot: 'test/',
+                src: 'fixtures/**/*.html',
+                dest: 'tmp/all-templates2.html'
             }
         },
 

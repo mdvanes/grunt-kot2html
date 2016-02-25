@@ -35,5 +35,14 @@ exports.kot2html = {
         test.equal(actual, expected, 'should describe what the default behavior is.');
 
         test.done();
+    },
+    distWithSrcRoot: function (test) {
+        test.expect(1);
+
+        var actual = grunt.file.read('tmp/all-templates2.html');
+        var expected = grunt.file.read('test/expected/dist2');
+        test.equal(actual, expected, 'should skip the srcRoot part of the path.');
+
+        test.done();
     }
 };
