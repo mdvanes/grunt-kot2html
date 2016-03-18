@@ -1,7 +1,7 @@
 {
   "name": "grunt-kot2html",
   "description": "Grunt task to combine Knockout templates into one HTML for the Knockout.js-External-Template-Engine.",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "homepage": "https://github.com/mdvanes/grunt-kot2html",
   "author": {
     "name": "M.D. van Es",
