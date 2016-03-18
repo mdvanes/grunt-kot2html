@@ -27,20 +27,31 @@ exports.kot2html = {
         // setup here if necessary
         done();
     },
-    dist: function (test) {
+    dist1: function (test) {
         test.expect(1);
 
         var actual = grunt.file.read('tmp/all-templates.html');
-        var expected = grunt.file.read('test/expected/dist');
+        var expected = grunt.file.read('test/expected/result1.html');
         test.equal(actual, expected, 'should describe what the default behavior is.');
 
         test.done();
     },
-    distWithSrcRoot: function (test) {
+    dist2: function (test) {
+        // with srcRoot and prefix
         test.expect(1);
 
         var actual = grunt.file.read('tmp/all-templates2.html');
-        var expected = grunt.file.read('test/expected/dist2');
+        var expected = grunt.file.read('test/expected/result2.html');
+        test.equal(actual, expected, 'should skip the srcRoot part of the path.');
+
+        test.done();
+    },
+    dist3: function (test) {
+        // with srcRoot and without prefix
+        test.expect(1);
+
+        var actual = grunt.file.read('tmp/all-templates3.html');
+        var expected = grunt.file.read('test/expected/result3.html');
         test.equal(actual, expected, 'should skip the srcRoot part of the path.');
 
         test.done();
