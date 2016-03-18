@@ -27,6 +27,10 @@ module.exports = function (grunt) {
             process.chdir(this.data.srcRoot);
         }
 
+        if(!prefix) {
+            prefix = '';
+        }
+
         files.forEach(function (file) {
             grunt.verbose.writeln('Processing', file);
 

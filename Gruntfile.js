@@ -30,16 +30,21 @@ module.exports = function (grunt) {
 
         // Configuration to be run (and then tested).
         kot2html: {
-            dist: {
+            dist1: {
                 prefix: '/theme/',
                 src: 'test/fixtures/**/*.html',
                 dest: 'tmp/all-templates.html'
             },
-            distWithSrcRoot: {
+            dist2: {
                 prefix: '/theme/',
                 srcRoot: 'test/',
                 src: 'fixtures/**/*.html',
                 dest: 'tmp/all-templates2.html'
+            },
+            dist3: {
+                srcRoot: 'test/',
+                src: 'fixtures/**/*.html',
+                dest: 'tmp/all-templates3.html'
             }
         },
 
